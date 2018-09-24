@@ -1,1 +1,18 @@
+function getFirstSelector(selector){
+  return document.querySelector(selector)
+}
 
+function nestedTarget(){
+  return document.querySelector('#nested div div div div')
+}
+
+function increaseRankBy(n){
+  const lis = document.querySelectorAll('ul.ranked-list li');
+  lis.forEach(function(li){
+    li.innerHTML = (parseInt(li.innerHTML) + n)
+  })
+}
+
+function deepestChild(){
+  return document.querySelector('#grand-node div div div div')
+}
